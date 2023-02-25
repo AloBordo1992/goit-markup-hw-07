@@ -65,12 +65,25 @@ ul {
   padding: 0px;
 }
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 428px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+  
+  outline: 2px solid red;
+  outline-offset: -2px;
 }
+@media screen and (min-width: 768px){
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width:1156px){
+  .container {
+    max-width: 1158px;
+  }  
 header {
   border-bottom: 1px solid #e7e9fc;
 }

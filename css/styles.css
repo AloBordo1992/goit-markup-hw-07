@@ -65,11 +65,26 @@ ul {
   padding: 0px;
 }
 .container {
-  width: 1158px;
+  min-width: 320px;
+  max-width: 428px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+/* width: 1158px;
+  */
+  outline: 2px solid red;
+  outline-offset: -2px;
+}
+@media screen and (min-width:768px) {
+  .container {
+      max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+.container {
+  max-width: 1158px;
+}  
 }
 header {
   border-bottom: 1px solid #e7e9fc;
@@ -92,7 +107,7 @@ header {
   width: 261px;
   margin-left: 76px;
 }
-.flexbox-сontakts {
+.flexbox-contakts {
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -154,21 +169,52 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 600px; /*висота контента*/
+  max-height: 600px; 
   max-width: 1440px;
-  padding-top: 188px; /*відстань від рамки с середену до контенту*/
-  padding-bottom: 188px; /*відстань від рамки с середену до контенту*/
+  padding-top: 188px;
+  padding-bottom: 188px;
   background-color: var(--navy-blue);
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../image/fon/fon-hero.png);
+    url(../image/fon/fon_hero_mob@1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../image/fon/fon_hero_mob@2x.png);
+  }
+}
+@media screen and(min-width:428px) {
+  .hero{
+    background-image: url(../image/fon/fon_hero_tab@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../image/fon/fon_hero_tab@2x.png);
+  }
+}
+}
+@media screen and(min-width:1200) {
+  .hero{
+    background-image: url(../image/fon/fon_hero_desk@1x.png);
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../image/fon/fon_hero_desk@2x.png);
+  }
+}
 }
 .hero-title {
   font-weight: 700;
@@ -386,7 +432,8 @@ header {
 }
 .footer {
   background-color: var(--navy-blue);
-  padding: 100px 0px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-container {
   display: flex;
@@ -570,14 +617,14 @@ header {
   fill: #ffffff;
 }
 .form-footer {
-  display: flex;
   justify-content: center;
 }
 .footer-form-label {
-  margin-right: 24px;
+  margin-right: 100%;
 }
 .text-form-footer {
   display: block;
+  text-align: center;
   margin-bottom: 16px;
   font-weight: 600;
   font-size: 16px;
@@ -607,6 +654,7 @@ header {
 
 .button-footer {
   display: flex;
+  margin: auto;
   height: 40px;
   padding: 8px 24px;
   background-color: #4d5ae5;

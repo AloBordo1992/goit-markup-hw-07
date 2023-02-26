@@ -434,12 +434,16 @@ header {
 }
 .footer-container {
   display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center
 }
 .footer-link {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-right: 120px;
+  align-items: center
+ 
 }
 .logo-web {
   font-family: var(--logo-font);
@@ -472,11 +476,17 @@ header {
   height: 72px;
 }
 .socmedia {
-  display: flex;
+    display: flex;
+    width: 208px;
+    height: 80px;
+    /* margin-right: 80px; */
+    align-items: center;
+    flex-direction: column;
+  /* display: flex;
   flex-wrap: wrap;
   width: 208px;
   height: 80px;
-  margin-right: 80px;
+  margin-right: 80px; */
 }
 .footer-title {
   color: var(--gloud);
@@ -631,8 +641,15 @@ header {
 .footer-form-label {
   color: #ffffff;
 }
+.subscrible-wrapper{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: 396px;
+}
 .footer-form-field {
-  width: 264px;
+  width: 396px;
   height: 40px;
   padding: 8px 16px;
   background-color: transparent;

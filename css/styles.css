@@ -1,3 +1,8 @@
+/* Breakpoints:
+   phones - 480px
+   tablet - 768px
+   desktop - 1200 */
+
 :root {
   /* fonts */
   --primary-font: "Roboto";
@@ -66,7 +71,7 @@ ul {
 }
 .container {
   min-width: 320px;
-  max-width: 428px;
+  max-width: 448px;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
@@ -84,6 +89,7 @@ ul {
   .container {
     max-width: 1158px;
   }  
+}
 header {
   border-bottom: 1px solid #e7e9fc;
 }
@@ -105,7 +111,7 @@ header {
   width: 261px;
   margin-left: 76px;
 }
-.flexbox-сontakts {
+.flexbox-contakts {
   display: flex;
   justify-content: space-between;
   gap: 40px;
@@ -399,16 +405,18 @@ header {
 }
 .footer {
   background-color: var(--navy-blue);
-  padding: 100px 0px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer-container {
-  display: flex;
+  /* display: flex; */
 }
 .footer-link {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  margin-right: 120px;
+  /* margin-right: 120px; */
+  text-align: center;
 }
 .logo-web {
   font-family: var(--logo-font);
@@ -583,8 +591,8 @@ header {
   fill: #ffffff;
 }
 .form-footer {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 .footer-form-label {
   margin-right: 24px;
@@ -597,9 +605,9 @@ header {
   line-height: 1.5;
   color: #ffffff;
 }
-.footer-form-label {
+/* .footer-form-label {
   color: #ffffff;
-}
+} */
 .footer-form-field {
   width: 264px;
   height: 40px;

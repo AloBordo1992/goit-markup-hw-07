@@ -109,9 +109,11 @@ header {
 }
 .flexbox-contakts {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
 }
+
 
 .stail-nav {
   font-weight: 500;
@@ -400,18 +402,20 @@ header {
   color: var(--navy-blue);
   text-transform: capitalize;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 72px;
 }
 .lists-costomers {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 72px;
+  column-gap: 16px;
 }
 .icons-costomer {
   fill: currentColor;
 }
 .link-castom {
   display: flex;
-  width: 168px;
+  width: 190px;
   height: 88px;
   justify-content: center;
   align-items: center;
@@ -442,8 +446,8 @@ header {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
-  align-items: center
- 
+  align-items: center;
+  margin-bottom: 72px;
 }
 .logo-web {
   font-family: var(--logo-font);
@@ -463,6 +467,7 @@ header {
   line-height: calc(24 / 18);
   letter-spacing: 0.03em;
   color: var(--gloud);
+  margin-bottom: 16;
 }
 .fuoter-tet {
   font-weight: 400;
@@ -472,21 +477,16 @@ header {
   color: var(--gloud);
 
   margin-top: 16px;
-  width: 264px;
+  width: 268px;
   height: 72px;
 }
 .socmedia {
     display: flex;
     width: 208px;
     height: 80px;
-    /* margin-right: 80px; */
     align-items: center;
     flex-direction: column;
-  /* display: flex;
-  flex-wrap: wrap;
-  width: 208px;
-  height: 80px;
-  margin-right: 80px; */
+    margin-bottom: 72px;
 }
 .footer-title {
   color: var(--gloud);
@@ -626,9 +626,6 @@ header {
 .form-footer {
   justify-content: center;
 }
-.footer-form-label {
-  margin-right: 100%;
-}
 .text-form-footer {
   display: block;
   text-align: center;
@@ -667,10 +664,6 @@ header {
 }
 
 .button-footer {
-  display: flex;
-  margin: auto;
-  height: 40px;
-  padding: 8px 24px;
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
@@ -683,6 +676,12 @@ header {
   line-height: 1.5;
   letter-spacing: 0.06em;
   color: var(--background);
+
+  display: flex;
+  margin: auto;
+  height: 40px;
+  padding: 8px 24px;
+  margin-top: 16px;
 }
 .button-footer:hover,
 .button-footer:focus,
